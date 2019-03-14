@@ -1,7 +1,6 @@
-import Ember from 'ember';
 import JSONAPIAdapter from 'ember-data/adapters/json-api';
-
-const { String: { pluralize, underscore } } = Ember;
+import { underscore } from '@ember/string';
+import { pluralize } from 'ember-inflector';
 
 export default JSONAPIAdapter.extend({
 

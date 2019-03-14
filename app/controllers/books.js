@@ -1,7 +1,7 @@
-import Ember from 'ember';
-const { computed } = Ember;
+import Controller from '@ember/controller';
+import { computed } from '@ember/object';
 
-export default Ember.Controller.extend({
+export default Controller.extend({
 
   queryParams: ['limit'],
   limit: 5,
