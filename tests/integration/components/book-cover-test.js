@@ -8,17 +8,16 @@ moduleForComponent('book-cover', 'Integration | Component | book cover', {
 test('it renders', function(assert) {
   // Set any properties with this.set('myProperty', 'value');
   // Handle any actions with this.on('myAction', function(val) { ... });
+  this.set('book', {
+    title: "foobar",
+    author: {
+      id: 1,
+      name: "John Smith"
+    }
+  });
 
-  this.render(hbs`{{book-cover}}`);
+  this.render(hbs`{{book-cover book=book}}`);
 
-  assert.equal(this.$().text().trim(), '');
+  assert.equal(this.$().text().trim(), 'foobar\n  by\n  John Smith');
 
-  // Template block usage:
-  this.render(hbs`
-    {{#book-cover}}
-      template block text
-    {{/book-cover}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
 });
