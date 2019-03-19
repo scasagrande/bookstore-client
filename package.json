@@ -33,6 +33,8 @@
     "ember-cli-uglify": "^2.0.0",
     "ember-data": "~2.18.0",
     "ember-export-application-global": "^2.0.0",
+    "ember-intl": "^3.5.2",
+    "ember-keyboard": "^4.0.0",
     "ember-load-initializers": "^1.0.0",
     "ember-modal-dialog": "^3.0.0-beta.3",
     "ember-resolver": "^4.0.0",
