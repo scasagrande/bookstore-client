@@ -26,6 +26,10 @@ body {
     height: 90%;
     cursor: pointer;
   }
+
+  ul li:focus {
+    border: 6px solid rgb(0, 0, 0);
+  }
   
   a {
     text-decoration: none;
